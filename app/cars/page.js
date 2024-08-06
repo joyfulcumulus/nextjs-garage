@@ -1,5 +1,9 @@
 import ProductCard from "../ui/product-card";
 
+export const metadata = {
+  title: 'Cars Home',
+}
+
 export default function Page() {
   return (
     <div>

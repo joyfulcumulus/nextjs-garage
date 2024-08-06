@@ -4,9 +4,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NextJS Garage App",
+  title: {
+    template: '%s | NextJS Garage App',
+    default: 'NextJS Garage App',
+  },
   description: "Garage Management App",
-};
+}
 
 export default function RootLayout({ children }) {
   return (
