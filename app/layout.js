@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { open_sans } from "./ui/fonts";
 
 export const metadata = {
   title: {
@@ -14,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${open_sans.className} antialiased`}>{children}</body>
     </html>
   );
 }
